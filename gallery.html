@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | La Casa Interio - Our Best Works</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1/1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span class="logo-main premium-font">LA CASA INTERIO</span>
+                    <span class="logo-sub">Stainless Steel Modular Kitchens</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active" style="color: var(--accent-color);">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header"
+        style="background: var(--primary-color); color: var(--text-color); padding: 100px 0; text-align: center;">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Showcasing our best kitchen and interior projects</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="stainless-steel-l-shape-laminated-modular-kitchen-for-home-2220449681-ka83ilmo.avif" alt="L-Shape Stainless Steel Kitchen">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Gallery Kitchen 2">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="lacasa-interio-pantheerankavu-kozhikode-modular-kitchen-manufacturers-kjs9a3qf6y.jpg" alt="Interior Design Project">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <!-- Adding more placeholders for variety -->
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Modern Interior">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Dining Area">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--primary-color); color: var(--text-color); padding: 60px 0 20px;">
+        <!-- Footer -->
+        <div class="container">
+            <div class="services-grid">
+                <div>
+                    <h4 style="color: var(--accent-color); margin-bottom: 20px;">La Casa Interio</h4>
+                    <p>Specialists in Stainless Steel Modular Kitchens and complete interior solutions since 2000.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-color); margin-bottom: 20px;">Quick Links</h4>
+                    <ul style="line-height: 2;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-color); margin-bottom: 20px;">Follow Us</h4>
+                    <div style="display: flex; gap: 15px; font-size: 1.5rem;">
+                        <a href="https://www.facebook.com/lacasainteriocalicut/" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lacasainteriocalicut/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 20px;">
+                <p>&copy; 2024 La Casa Interio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp & Mobile Call Buttons -->
+    <a href="https://wa.me/919745864197" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="sticky-call">
+        <a href="tel:+919745864197"><i class="fas fa-phone"></i> Call Now for a Consultation</a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

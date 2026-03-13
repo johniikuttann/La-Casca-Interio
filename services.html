@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | La Casa Interio - Modular Kitchens & Interiors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-list-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+
+        .service-list-item:nth-child(even) {
+            direction: rtl;
+        }
+
+        .service-list-item:nth-child(even) .service-content {
+            direction: ltr;
+        }
+
+        .service-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .service-list-item {
+                grid-template-columns: 1fr;
+                direction: ltr !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span class="logo-main premium-font">LA CASA INTERIO</span>
+                    <span class="logo-sub">Stainless Steel Modular Kitchens</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active" style="color: var(--accent-color);">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header"
+        style="background: var(--primary-color); color: var(--text-color); padding: 100px 0; text-align: center;">
+        <div class="container">
+            <h1>Our Products & Services</h1>
+            <p>From Stainless Steel Kitchens to Complete Interior Designing</p>
+        </div>
+    </section>
+
+    <section class="services-list">
+        <div class="container">
+
+            <div class="service-list-item">
+                <div class="service-image">
+                    <img src="stainless-steel-l-shape-laminated-modular-kitchen-for-home-2220449681-ka83ilmo.avif" alt="L-Shape Laminated Stainless Steel Modular Kitchen">
+                </div>
+                <div class="service-content">
+                    <h2 class="premium-font">Stainless Steel Modular Kitchens</h2>
+                    <p style="margin: 20px 0;">Our flagship product. These kitchens are moisture-resistant, durable, and
+                        offer a sleek, modern aesthetic that lasts for decades without rust or damage.</p>
+                    <ul style="list-style: disc; margin-left: 20px;">
+                        <li>304 Grade Stainless Steel</li>
+                        <li>Waterproof & Fire resistant</li>
+                        <li>Eco-friendly and hygienic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-list-item">
+                <div class="service-image">
+                    <img src="lacasa-interio-pantheerankavu-kozhikode-modular-kitchen-manufacturers-kjs9a3qf6y.jpg" alt="Complete Interior Designing by La Casa Interio">
+                </div>
+                <div class="service-content">
+                    <h2 class="premium-font">Complete Interior Designing</h2>
+                    <p style="margin: 20px 0;">We provide end-to-end interior design solutions for villas and
+                        apartments, focusing on spatial optimization and luxury aesthetics.</p>
+                    <ul style="list-style: disc; margin-left: 20px;">
+                        <li>3D Design Visualizations</li>
+                        <li>Custom Furniture layouts</li>
+                        <li>Space planning</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="services-grid" style="margin-top: 50px;">
+                <div class="service-card">
+                    <h3>False Ceiling Work</h3>
+                    <p>Modern lighting and ceiling designs to enhance your living space.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Steel Modular Kitchens</h3>
+                    <p>Reliable and cost-effective modular kitchen solutions.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer style="background: var(--primary-color); color: var(--text-color); padding: 60px 0 20px;">
+        <!-- Footer -->
+        <div class="container">
+            <div class="services-grid">
+                <div>
+                    <h4 style="color: var(--accent-color); margin-bottom: 20px;">La Casa Interio</h4>
+                    <p>Specialists in Stainless Steel Modular Kitchens and complete interior solutions since 2000.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-color); margin-bottom: 20px;">Quick Links</h4>
+                    <ul style="line-height: 2;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-color); margin-bottom: 20px;">Follow Us</h4>
+                    <div style="display: flex; gap: 15px; font-size: 1.5rem;">
+                        <a href="https://www.facebook.com/lacasainteriocalicut/" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lacasainteriocalicut/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 20px;">
+                <p>&copy; 2024 La Casa Interio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp & Mobile Call Buttons -->
+    <a href="https://wa.me/919745864197" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="sticky-call">
+        <a href="tel:+919745864197"><i class="fas fa-phone"></i> Call Now for a Consultation</a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
