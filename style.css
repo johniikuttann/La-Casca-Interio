@@ -323,7 +323,7 @@ section {
         left: 0;
         width: 100%;
         background: var(--primary-color);
-        color: var(--secondary-color);
+        color: white;
         text-align: center;
         padding: 15px;
         font-weight: bold;
