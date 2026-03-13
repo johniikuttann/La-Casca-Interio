@@ -339,7 +339,8 @@ section {
     }
 
     .btn {
-        width: 100%;
+        width: auto;
+        margin-bottom: 10px;
     }
 
     /* Hamburger Animation */
